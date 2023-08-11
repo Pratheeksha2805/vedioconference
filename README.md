@@ -9,12 +9,14 @@ View remote video stream during the call.
 Record video during the call and download the recording.
 
 Technologies Used
+
 HTML5 and CSS3 for the user interface.
 JavaScript for adding interactivity and handling video conferencing logic.
 WebRTC for establishing peer-to-peer connections for audio and video.
 MediaRecorder API for recording video during the call.
 
 Getting Started
+
 Clone the repository to your local machine.
 Open index.html in a web browser to launch the application.
 Usage
