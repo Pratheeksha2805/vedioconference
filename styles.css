@@ -1,0 +1,73 @@
+body {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURExUYHSggGCYlGxUVITEhJSk3Oi46Fx8/ODM4NygtOjcBCgoKDQ0NDw0NDjcZFRk3NzQrKysrLS0rLSwrKystKys3KzcrLSsrKystLSsrKysrKysrLS0rKy0rKysrKy0tK//AABEIAKgBLAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAABAgADBAUH/8QAHBABAQEBAAMBAQAAAAAAAAAAAAERAhRRoQQD/8QAGAEBAQEBAQAAAAAAAAAAAAAAAgEAAwT/xAAZEQEBAQEBAQAAAAAAAAAAAAAAARETAiH/2gAMAwEAAhEDEQA/AP0hQio9DzY0XExcSnIYuJi4JRUVExcQlRUTFRGVCIUZmrMo1NTVVNKOdRU1dRSjnUUGggooZiFlCGIxhgi4hRoqNFCcaFsKLgbDjYy4kWLwMNiKldFILEUKZRx4lCGC9Uhi4mKiHFRcTFQSVFQRURVRUTDEZRDMhDNVGioqqmlAqaiqqaUcqmppqacc6zBlQxUTFRGioqJi4NOKioIqQa6SNITChYMbDjM2JFUKw2IoqqCCoCqFF4zGMF6oYqCKiUoYuJioJKiomKiKqGJimYkMyMwZYFFTTU0oFTU1VRTjlU0U1NKOdBBiiYqJi4hRUXE8rg10iouCKgV0kaQmESAIVgKaKo1NTVVNVzoBSovLDGMR6Y0XExUQoqGCKgmYqJioikiFkLBmRgzLBoqaaKUc6mpqqmlHOpqVUFHOhiyoYqCLiVYrlcTFwa6RcVExUCukUzMhMKU1koorUUhqaKamrHOihqCGuBYi9LRUEVEKGGCKgkYYCilmZmLBmZhSFGipqhSgVNSoFHOxIUMULBhONijjRcEMRYqLiYqDTi4qIhlQovW1OtqYWnRaNTa2DabU2tam0hta1NrWptJztOgWjVHUlsIPTGihFRDjGNCJRizITEMykMzIwIZKwIIKAoKFicZTENiThxmHGMZmYxUSWZWnUa2pi6vW1GjWxtXam1Oi1cG1VqbU2i1cG02i1NotLAtNo0aNXB11LFzeuVoqAiUrFmQ4WZhNmYMpDMjMzMqMzMo2MzFRsTjYrGxQsTjKxlHACyiw1gyHRotTauJqtFqbRauDqtGp1Org6vRajRq4mqtGp0aWBarRqdGria9pYuD1ysQUOUszC6RmYIcZmCEzMyKWDMxIKixYqNgxsU2KNicZQUKkKoqhU1NVUUoFFqbTUWlAta1NrWptLAtOjU6NXB1WjU62riadGjRqjadbU6NXB19MgvO9sphDDTlLMyOkoZgLpGDDUOFgyKSkxlVDBDGRUMEVFGsWwqFAxWBRqKKuopRzqKirqKUc6ioq6inHKpqLVVFKBRQ1BA2to0aqabRo0Lg2nRo0KOvrsC8z2ykiMJylmCOsrCsKLpGAAukOsGQ1GJhjMuKiIuMi4qJiow0loVGgVQqhU1FXUUoFRXPp06c+jjlUdOddOnPo45VFTVVFOOdFTTU0grUMFGslqCCtrAawvsszPK98JZkOMGYa6wCsyV0iaGYa6QFmEzFQMyrioWZFRcZmFULMo0hmUaipoYo51Fc+mY45Vz6R0GdI5VFTWYo5VFbnnbkDLfkqSbZF3+F9z6PHvufWZz6V34+Rfz33Po8e+59Zl6VOHlvG69z6PG69z6Wbp6Th4f/Z'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#videoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+}
+
+#chatContainer {
+    width: 100%;
+    max-width: 800px;
+}
+
+#chatLog {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#chatInput {
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#sendButton {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button {
+    margin-right: 10px;
+}
